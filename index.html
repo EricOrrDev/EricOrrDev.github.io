@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Orr - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+    <style>
+        #contactForm {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+        }
+        #contactForm.active {
+            max-height: 500px;
+            opacity: 1;
+        }
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-warning">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Eric Orr - Portfolio
+                </h1>
+                <h2 class="subtitle">
+                    Explore my GitHub projects below
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+
+                <!-- MText Project Card -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">MText++</p>
+                            <p class="subtitle">A simple tool for finding and incrementing numbers in MText strings in AutoCAD</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://github.com/EricOrrDev/Mtext_plusplus" class="card-footer-item" target="_blank">View on GitHub</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Terminal Website Project Card -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">Terminal Website</p>
+                            <p class="subtitle">My portfolio website styled as a terminal.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://github.com/EricOrrDev/terminal-website" class="card-footer-item" target="_blank">View on GitHub</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- War Games C Project Card -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">WARGAMES</p>
+                            <p class="subtitle">A C game simulating the Prisoner's Dilemma in the theme of the movie <em>WarGames</em>.</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://github.com/EricOrrDev/WARGAMES" class="card-footer-item" target="_blank">View on GitHub</a>
+                        </footer>
+                    </div>
+                </div>
+
+				<!-- Github.io Card -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title">Portfolio Website</p>
+                            <p class="subtitle">This very website</p>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="https://github.com/EricOrrDev/EricOrrDev.io" class="card-footer-item" target="_blank">View on GitHub</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <button class="button is-link" id="contactButton" style="margin-bottom: 1rem;">Contact Me</button>
+
+            <div id="contactForm">
+                <h2 class="title">Contact Me</h2>
+                <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" name="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input" type="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
