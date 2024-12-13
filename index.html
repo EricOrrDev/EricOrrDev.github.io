@@ -25,6 +25,7 @@
     </style>
 </head>
 <body>
+    <!-- Hero Header-->
     <section class="hero is-warning">
         <div class="hero-body">
             <div class="container">
@@ -39,11 +40,23 @@
     </section>
 
     <section class="section">
-        <div class="container">
-            <div class="columns is-multiline">
+        <div class="box">
+            <h1 class="title">About me</h1>
+            <p class="content">
+                In highschool I made my first program on a TI-83 calculator in Algebra 2, a class I was failing because I was more focused on learning TI-BASIC than doing homework. I made a terrible quadratic formula calculator that crash if it produced an imaginary number. Eventually I took all of the programming classes my school had to offer and became the school's webmaster. Parallel to that, I fell in love with drafting and eventually pursued an associates degree in drafting.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects section-->
+    <section class="section">
+        <div class="container box p-6">
+            <h1 class="title">Projects</h1>
+            <div class="columns is-multiline is-variable">
 
                 <!-- MText Project Card -->
-                <div class="column is-one-third">
+                <div class="column is-half">
                     <div class="card">
                         <div class="card-content">
                             <p class="title">MText++</p>
@@ -56,7 +69,7 @@
                 </div>
 
                 <!-- Terminal Website Project Card -->
-                <div class="column is-one-third">
+                <div class="column is-half">
                     <div class="card">
                         <div class="card-content">
                             <p class="title">Terminal Website</p>
@@ -69,7 +82,7 @@
                 </div>
 
                 <!-- War Games C Project Card -->
-                <div class="column is-one-third">
+                <div class="column is-half">
                     <div class="card">
                         <div class="card-content">
                             <p class="title">WARGAMES</p>
@@ -82,7 +95,7 @@
                 </div>
 
 				<!-- Github.io Card -->
-                <div class="column is-one-third">
+                <div class="column is-half">
                     <div class="card">
                         <div class="card-content">
                             <p class="title">Portfolio Website</p>
@@ -97,7 +110,74 @@
         </div>
     </section>
 
-	<section class="section py-0">
+    <!-- Skills section-->
+	<section class="section">
+		<div class="container">
+			<div class="box has-background-dark is-rounded">
+				<h1 class="title">Skills</h1>
+				
+				<section class="section content columns is-multiline py-2 my-1">
+					<div class="column is-one-quarter">
+                        <h2 class="subtitle mb-1">Languages</h2>
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Visual Basic</li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <h2 class="subtitle mb-1">Databases</h2>
+                                            <ul>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <h2 class="subtitle mb-1">Web Technologies</h2>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>.NET</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <h2 class="subtitle mb-1">Drafting Technologies</h2>
+                        <ul>
+                            <li>AutoCAD</li>
+                            <li>Inventor</li>
+                            <li>Microstation</li>
+                            <li>SolidWorks</li>
+                            <li>Revit</li>
+                        </ul>
+                    </div>
+				</section>
+			</div>
+		</div>
+	</section>
+
+    <!-- Education section-->
+	<section class="section">
+		<div class="container">
+			<div class="box has-background-dark is-rounded">
+				<h1 class="title">Education</h1>
+				
+				<section class="section content py-2 my-1">
+					<h2 class="subtitle mb-1">Bachelors of Science in Computer Science</h2>
+					<h3 class="subtitle is-6">Oregon State University - Cascades, Bend Oregon, September 2024 - Present</h3>
+				</section>
+			</div>
+		</div>
+	</section>
+    <!-- Experience section-->
+	<section class="section">
 		<div class="container">
 			<div class="box has-background-dark is-rounded">
 				<h1 class="title">Experiences</h1>
@@ -156,12 +236,13 @@
 		</div>
 	</section>
 
+    <!-- Contact Button and Form-->
 	<section class="section">
         <div class="container">
             <button class="button is-link mb-5" id="contactButton">Contact Me</button>
 
             <div id="contactForm">
-                <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+                <form action="REPLACE ME WITH ENDPOINT TO EMAIL" method="POST">
                     <div class="field">
                         <label class="label">Name</label>
                         <div class="control">
