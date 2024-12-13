@@ -5,274 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Orr - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
-    <style>
-        #contactForm {
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            transition: max-height 0.5s ease, opacity 0.5s ease;
-        }
-        #contactForm.active {
-            max-height: 500px;
-            opacity: 1;
-        }
-        .card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Header-->
-    <section class="hero is-warning">
-        <div class="hero-body">
+        <div class="">
+            <!-- Hero Header-->
+            <section class="hero is-warning">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title pb-4">
+                        Hey, I'm <span class="is-underlined">Eric Orr</span>.
+                    </h1>
+                    <h2 class="subtitle">
+                        I am a CS student, passionate about problem solving and making tools to improve workflows.
+                    </h2>
+                </div>
+            </div>
+            </section>
+            <section class="section">
+            <div class="container box has-background-dark">
+                <h1 class="title">About me</h1>
+                <p class="content">
+                    In high school, I created my first program on a TI-83 calculator during Algebra 2—a class I struggled with because I was more interested in learning TI-BASIC than completing homework. That first attempt at programming was a simple quadratic formula calculator that crashed whenever it encountered imaginary numbers.
+                    <br>
+                    As my interest in coding grew, I took every programming class my school offered and eventually became the school's webmaster. Alongside this, I discovered a passion for drafting and pursued an associate degree in the field. However, while working as a mechanical designer, I realized I spent most of my time scripting to overcome the limitations of existing CAD tools.
+                    <br>
+                    This experience showed me that my true passion was not just in design but in creating better tools for design. Instead of being a frustrated drafter writing AutoLISP scripts for AutoCAD 2004, I chose to return to college and focus on becoming a programmer—one who can contribute to the next generation of CAD tooling.
+                    <br>
+                    I'm deeply inspired by computational, parametric, and generative design and draw influence from visionaries like Neri Oxman and Buckminster Fuller. My goal is to develop tools that empower designers and transform the way we approach complex problems.
+                </p>
+            </div>
+            </section>
+            <!-- Projects section-->
+            <section class="section">
+            <div class="container box p-6">
+                <h1 class="title">Projects</h1>
+                <div class="columns is-multiline is-variable">
+                    <!-- MText Project Card -->
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="title">MText++</p>
+                                <p class="subtitle">A simple tool for finding and incrementing numbers in MText strings in AutoCAD</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/EricOrrDev/Mtext_plusplus" class="card-footer-item" target="_blank">View on GitHub</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- Terminal Website Project Card -->
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="title">Terminal Website</p>
+                                <p class="subtitle">My portfolio website styled as a terminal.</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/EricOrrDev/terminal-website" class="card-footer-item" target="_blank">View on GitHub</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- War Games C Project Card -->
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="title">WARGAMES</p>
+                                <p class="subtitle">A C game simulating the Prisoner's Dilemma in the theme of the movie <em>WarGames</em>.</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/EricOrrDev/WARGAMES" class="card-footer-item" target="_blank">View on GitHub</a>
+                            </footer>
+                        </div>
+                    </div>
+            
+                            <!-- Github.io Card -->
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="title">Portfolio Website</p>
+                                <p class="subtitle">This very website</p>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="https://github.com/EricOrrDev/EricOrrDev.io" class="card-footer-item" target="_blank">View on GitHub</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- Skills section-->
+                    <section class="section">
+                    <div class="container">
+                        <div class="box has-background-dark is-rounded">
+                            <h1 class="title">Skills</h1>
+                            
+                            <section class="section content columns is-multiline py-2 my-1">
+                                <div class="column is-one-quarter">
+                            <h2 class="subtitle mb-1">Languages</h2>
+                            <ul>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>Visual Basic</li>
+                            </ul>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <h2 class="subtitle mb-1">Databases</h2>
+                                                <ul>
+                                <li>MySQL</li>
+                                <li>SQLite</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <h2 class="subtitle mb-1">Web Technologies</h2>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>.NET</li>
+                                <li>REST APIs</li>
+                            </ul>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <h2 class="subtitle mb-1">Drafting Technologies</h2>
+                            <ul>
+                                <li>AutoCAD</li>
+                                <li>Inventor</li>
+                                <li>Microstation</li>
+                                <li>SolidWorks</li>
+                                <li>Revit</li>
+                            </ul>
+                        </div>
+                            </section>
+                        </div>
+                    </div>
+                    </section>
+            <!-- Education section-->
+                    <section class="section">
+                    <div class="container">
+                        <div class="box has-background-dark is-rounded">
+                            <h1 class="title">Education</h1>
+                            
+                            <section class="section content py-2 my-1">
+                                <h2 class="subtitle mb-1">Bachelors of Science in Computer Science</h2>
+                                <h3 class="subtitle is-6">Oregon State University - Cascades, Bend Oregon, September 2024 - Present</h3>
+                            </section>
+                        </div>
+                    </div>
+                    </section>
+            <!-- Experience section-->
+                    <section class="section">
+                    <div class="container">
+                        <div class="box has-background-dark is-rounded">
+                            <h1 class="title">Experiences</h1>
+                            
+                            <section class="section content py-2 my-1">
+                                <h2 class="subtitle mb-1">Electrician's Assistant</h2>
+                                <h3 class="subtitle is-6">Westech Electric, Bend Oregon, June 2023 - Present</h3>
+                                <ul>
+                                    <li>Provided technical and administrative support with tasks such as maintaining tax documentation, payroll activities,
+                                        advertising, assisting in obtaining electrical permits, and general technology support.</li>
+                                    <li>
+                                        Communicated with customers regarding project specifics including deadlines, design proposals, cost estimates, and
+                                        technical requirements to achieve desired results within project constraints.</li>
+                                    <li>
+                                        Managed acquisition, delivery, and on-site handling of materials and equipment to ensure safety and timely project
+                                        progress.</li>
+                                    <li>
+                                        Diagnosed and installed of a variety of electrical equipment and circuits in commercial and residential settings, such as
+                                        outlets, switches, relays, lighting fixtures and circuit panels.</li>
+                                    <li>Operated a variety of equipment such as drills, torches, hydraulic punches and jacks, testing equipment, vacuum systems,
+                                        and hand tools.</li>
+                                </ul>
+                            </section>
+            
+                            <hr>
+            
+                            <section class="section content py-2 my-1">
+                                <h2 class="subtitle mb-1">Tray Aide then Cook</h2>
+                                <h3 class="subtitle is-6">Santiam Hospital, Stayton Oregon, May 2017 - October 2019</h3>
+                                <ul>
+                                    <li>Cooked a wide variety of therapeutic meals for a 40 bed hospital.</li>
+                                    <li>Supervised and trained staff for proficiency in cooking and kitchen safety.</li>
+                                    <li>Collaborated with patients and families to tailor meals to specific dietary needs, ensuring patient satisfaction and
+                                        adherence to nutritional guidelines.</li>
+                                    <li>Catered events both on and off hospital campus, managing logistics, meal preparations, and service to ensure event
+                                        execution.</li>
+                                    <li>Fostered morale and built relationships by cooking meals for nursing staff on days off.</li>
+                                </ul>
+                            </section>
+            
+                            <hr>
+            
+                            <section class="section content py-2 my-1">
+                                <h2 class="subtitle mb-1">Checker</h2>
+                                <h3 class="subtitle is-6">Safeway, Stayton Oregon, May 2014 - May 2017</h3>
+                                <ul>
+                                    <li>Operated a point-of-sales system to be top 20 in district for speed and productivity.</li>
+                                    <li>Defused hostile customer interactions, including high-stress situations involving threats, and transformed situations into
+                                        positive service experiences.</li>
+                                    <li>Led and delegated resolutions of diverse and unexpected operational challenges in a dynamic grocery store environment,
+                                        ensuring smooth and safe daily operations.</li>
+                                </ul>
+                            </section>
+            
+                        </div>
+                    </div>
+                    </section>
+            <!-- Contact Button and Form-->
+                    <section class="section">
             <div class="container">
-                <h1 class="title pb-4">
-                    Hey, I'm <span class="is-underlined">Eric Orr</span>.
-                </h1>
-                <h2 class="subtitle">
-                    I am a CS student, passionate about problem solving and making tools to improve workflows.
-                </h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="box">
-            <h1 class="title">About me</h1>
-            <p class="content">
-                In highschool I made my first program on a TI-83 calculator in Algebra 2, a class I was failing because I was more focused on learning TI-BASIC than doing homework. I made a terrible quadratic formula calculator that crash if it produced an imaginary number. Eventually I took all of the programming classes my school had to offer and became the school's webmaster. Parallel to that, I fell in love with drafting and eventually pursued an associates degree in drafting.
-
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects section-->
-    <section class="section">
-        <div class="container box p-6">
-            <h1 class="title">Projects</h1>
-            <div class="columns is-multiline is-variable">
-
-                <!-- MText Project Card -->
-                <div class="column is-half">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">MText++</p>
-                            <p class="subtitle">A simple tool for finding and incrementing numbers in MText strings in AutoCAD</p>
+                <button class="button is-link mb-5" id="contactButton">Contact Me</button>
+                <div id="contactForm">
+                    <form action="REPLACE ME WITH ENDPOINT TO EMAIL" method="POST">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" name="name" placeholder="Your name" required>
+                            </div>
                         </div>
-                        <footer class="card-footer">
-                            <a href="https://github.com/EricOrrDev/Mtext_plusplus" class="card-footer-item" target="_blank">View on GitHub</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Terminal Website Project Card -->
-                <div class="column is-half">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">Terminal Website</p>
-                            <p class="subtitle">My portfolio website styled as a terminal.</p>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" name="email" placeholder="Your email" required>
+                            </div>
                         </div>
-                        <footer class="card-footer">
-                            <a href="https://github.com/EricOrrDev/terminal-website" class="card-footer-item" target="_blank">View on GitHub</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- War Games C Project Card -->
-                <div class="column is-half">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">WARGAMES</p>
-                            <p class="subtitle">A C game simulating the Prisoner's Dilemma in the theme of the movie <em>WarGames</em>.</p>
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
+                            </div>
                         </div>
-                        <footer class="card-footer">
-                            <a href="https://github.com/EricOrrDev/WARGAMES" class="card-footer-item" target="_blank">View on GitHub</a>
-                        </footer>
-                    </div>
-                </div>
-
-				<!-- Github.io Card -->
-                <div class="column is-half">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">Portfolio Website</p>
-                            <p class="subtitle">This very website</p>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Send</button>
+                            </div>
                         </div>
-                        <footer class="card-footer">
-                            <a href="https://github.com/EricOrrDev/EricOrrDev.io" class="card-footer-item" target="_blank">View on GitHub</a>
-                        </footer>
-                    </div>
+                    </form>
                 </div>
             </div>
+            </section>
         </div>
-    </section>
-
-    <!-- Skills section-->
-	<section class="section">
-		<div class="container">
-			<div class="box has-background-dark is-rounded">
-				<h1 class="title">Skills</h1>
-				
-				<section class="section content columns is-multiline py-2 my-1">
-					<div class="column is-one-quarter">
-                        <h2 class="subtitle mb-1">Languages</h2>
-                        <ul>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>Visual Basic</li>
-                        </ul>
-                    </div>
-                    <div class="column is-one-quarter">
-                        <h2 class="subtitle mb-1">Databases</h2>
-                                            <ul>
-                            <li>MySQL</li>
-                            <li>SQLite</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="column is-one-quarter">
-                        <h2 class="subtitle mb-1">Web Technologies</h2>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>.NET</li>
-                            <li>REST APIs</li>
-                        </ul>
-                    </div>
-                    <div class="column is-one-quarter">
-                        <h2 class="subtitle mb-1">Drafting Technologies</h2>
-                        <ul>
-                            <li>AutoCAD</li>
-                            <li>Inventor</li>
-                            <li>Microstation</li>
-                            <li>SolidWorks</li>
-                            <li>Revit</li>
-                        </ul>
-                    </div>
-				</section>
-			</div>
-		</div>
-	</section>
-
-    <!-- Education section-->
-	<section class="section">
-		<div class="container">
-			<div class="box has-background-dark is-rounded">
-				<h1 class="title">Education</h1>
-				
-				<section class="section content py-2 my-1">
-					<h2 class="subtitle mb-1">Bachelors of Science in Computer Science</h2>
-					<h3 class="subtitle is-6">Oregon State University - Cascades, Bend Oregon, September 2024 - Present</h3>
-				</section>
-			</div>
-		</div>
-	</section>
-    <!-- Experience section-->
-	<section class="section">
-		<div class="container">
-			<div class="box has-background-dark is-rounded">
-				<h1 class="title">Experiences</h1>
-				
-				<section class="section content py-2 my-1">
-					<h2 class="subtitle mb-1">Electrician's Assistant</h2>
-					<h3 class="subtitle is-6">Westech Electric, Bend Oregon, June 2023 - Present</h3>
-					<ul>
-						<li>Provided technical and administrative support with tasks such as maintaining tax documentation, payroll activities,
-							advertising, assisting in obtaining electrical permits, and general technology support.</li>
-						<li>
-							Communicated with customers regarding project specifics including deadlines, design proposals, cost estimates, and
-							technical requirements to achieve desired results within project constraints.</li>
-						<li>
-							Managed acquisition, delivery, and on-site handling of materials and equipment to ensure safety and timely project
-							progress.</li>
-						<li>
-							Diagnosed and installed of a variety of electrical equipment and circuits in commercial and residential settings, such as
-							outlets, switches, relays, lighting fixtures and circuit panels.</li>
-						<li>Operated a variety of equipment such as drills, torches, hydraulic punches and jacks, testing equipment, vacuum systems,
-							and hand tools.</li>
-					</ul>
-				</section>
-
-				<hr>
-
-				<section class="section content py-2 my-1">
-					<h2 class="subtitle mb-1">Tray Aide then Cook</h2>
-					<h3 class="subtitle is-6">Santiam Hospital, Stayton Oregon, May 2017 - October 2019</h3>
-					<ul>
-						<li>Cooked a wide variety of therapeutic meals for a 40 bed hospital.</li>
-						<li>Supervised and trained staff for proficiency in cooking and kitchen safety.</li>
-						<li>Collaborated with patients and families to tailor meals to specific dietary needs, ensuring patient satisfaction and
-							adherence to nutritional guidelines.</li>
-						<li>Catered events both on and off hospital campus, managing logistics, meal preparations, and service to ensure event
-							execution.</li>
-						<li>Fostered morale and built relationships by cooking meals for nursing staff on days off.</li>
-					</ul>
-				</section>
-
-				<hr>
-
-				<section class="section content py-2 my-1">
-					<h2 class="subtitle mb-1">Checker</h2>
-					<h3 class="subtitle is-6">Safeway, Stayton Oregon, May 2014 - May 2017</h3>
-					<ul>
-						<li>Operated a point-of-sales system to be top 20 in district for speed and productivity.</li>
-						<li>Defused hostile customer interactions, including high-stress situations involving threats, and transformed situations into
-							positive service experiences.</li>
-						<li>Led and delegated resolutions of diverse and unexpected operational challenges in a dynamic grocery store environment,
-							ensuring smooth and safe daily operations.</li>
-					</ul>
-				</section>
-
-			</div>
-		</div>
-	</section>
-
-    <!-- Contact Button and Form-->
-	<section class="section">
-        <div class="container">
-            <button class="button is-link mb-5" id="contactButton">Contact Me</button>
-
-            <div id="contactForm">
-                <form action="REPLACE ME WITH ENDPOINT TO EMAIL" method="POST">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input" type="text" name="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                            <input class="input" type="email" name="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Message</label>
-                        <div class="control">
-                            <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
-                        </div>
-                    </div>
-
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <button class="button is-link" type="submit">Send</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <script src="script.js"></script>
 </body>
