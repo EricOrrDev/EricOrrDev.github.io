@@ -6,11 +6,14 @@
     <title>Eric Orr - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
 </head>
 <body>
-        <div class="">
-            <!-- Hero Header-->
-            <section class="hero is-warning">
+    <div class="">
+        <!-- Hero Header-->
+        <section class="hero is-warning">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title pb-4">
@@ -21,8 +24,8 @@
                     </h2>
                 </div>
             </div>
-            </section>
-            <section class="section">
+        </section>
+        <section class="section">
             <div class="container box has-background-dark">
                 <h1 class="title">About me</h1>
                 <p class="content">
@@ -35,10 +38,10 @@
                     I'm deeply inspired by computational, parametric, and generative design and draw influence from visionaries like Neri Oxman and Buckminster Fuller. My goal is to develop tools that empower designers and transform the way we approach complex problems.
                 </p>
             </div>
-            </section>
-            <!-- Projects section-->
-            <section class="section">
-            <div class="container box p-6">
+        </section>
+        <!-- Projects section-->
+        <section class="section">
+        <div class="container box p-6">
                 <h1 class="title">Projects</h1>
                 <div class="columns is-multiline is-variable">
                     <!-- MText Project Card -->
@@ -91,10 +94,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            </section>
-            <!-- Skills section-->
-                    <section class="section">
+        </div>
+        </section>
+        <!-- Skills section-->
+        <section class="section">
                     <div class="container">
                         <div class="box has-background-dark is-rounded">
                             <h1 class="title">Skills</h1>
@@ -144,8 +147,8 @@
                             </section>
                         </div>
                     </div>
-                    </section>
-            <!-- Education section-->
+        </section>
+        <!-- Education section-->
                     <section class="section">
                     <div class="container">
                         <div class="box has-background-dark is-rounded">
@@ -158,8 +161,8 @@
                         </div>
                     </div>
                     </section>
-            <!-- Experience section-->
-                    <section class="section">
+        <!-- Experience section-->
+        <section class="section">
                     <div class="container">
                         <div class="box has-background-dark is-rounded">
                             <h1 class="title">Experiences</h1>
@@ -216,42 +219,44 @@
             
                         </div>
                     </div>
-                    </section>
-            <!-- Contact Button and Form-->
-                    <section class="section">
+        </section>
+        <!-- Contact Button and Form -->
+        <section class="section">
             <div class="container">
                 <button class="button is-link mb-5" id="contactButton">Contact Me</button>
                 <div id="contactForm" class="box">
-                    <form action="REPLACE ME WITH ENDPOINT TO EMAIL" method="POST">
+                    <form id="contactFormInner">
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" name="name" placeholder="Your name" required>
+                                <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Email</label>
                             <div class="control">
-                                <input class="input" type="email" name="email" placeholder="Your email" required>
+                                <input class="input" type="email" id="email" name="email" placeholder="Your email" required>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Message</label>
                             <div class="control">
-                                <textarea class="textarea" name="message" placeholder="Your message" required></textarea>
+                                <textarea class="textarea" id="message" name="message" placeholder="Your message" required></textarea>
                             </div>
                         </div>
                         <div class="field is-grouped">
                             <div class="control">
-                                <button class="button is-link" type="submit">Send</button>
+                                <button class="button is-link" type="submit" id="sendButton">Send</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-            </section>
-        </div>
+        </section>
+        
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
