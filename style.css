@@ -11,6 +11,11 @@ section.hero .title{
 	letter-spacing: 0.03em;
 }
 
+.section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 .card {
 	height: 100%;
 	display: flex;
