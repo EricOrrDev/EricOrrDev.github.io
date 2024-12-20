@@ -7,6 +7,14 @@ section:not(.hero) .title {
     font-weight: 700;
 }
 
+h2.subtitle{
+	font-weight: 600;
+}
+h3.subtitle{
+	font-weight: 500;
+}
+
+
 section.hero .title{
 	letter-spacing: 0.03em;
 }
